@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arbalète</title>
+    <meta name="description" content="A sidebar for Chrome on macOS: Favorites, Spaces, pinned tabs, a command bar and Auto Archive, in Chrome's own data." />
+    <link rel="icon" href="icon-128.png" />
+    <!-- The public repository's home page, https://poparchi.github.io/arbalete/, published by
+         `npm run publish:site` (the same text as docs/public-readme.md). Self-contained like the
+         privacy policy: no script, font or request to anywhere but this site. -->
+    <style>
+      :root { color-scheme: light dark; --fg: #1d1b26; --muted: #5c566a; --bg: #fbfaf7; --line: #e7e2ec; --accent: #3d33d6; }
+      @media (prefers-color-scheme: dark) { :root { --fg: #ece9f3; --muted: #a7a0b6; --bg: #16141c; --line: #2c2836; --accent: #9d97ff; } }
+      body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, system-ui, "Segoe UI", sans-serif; }
+      main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+      nav { display: flex; gap: 16px; font-size: 14px; }
+      a { color: var(--accent); }
+      header { display: flex; align-items: center; gap: 16px; margin: 24px 0 8px; }
+      header img { width: 64px; height: 64px; }
+      h1 { font-size: 30px; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+      .lead { color: var(--muted); margin: 0 0 16px; }
+      section + section { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 8px; }
+      li { margin: 8px 0; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav><a href="#en">English</a><a href="#fr" hreflang="fr">Français</a></nav>
+
+      <section id="en" lang="en">
+        <header><img src="icon-128.png" alt="" /><h1>Arbalète</h1></header>
+        <p class="lead">A sidebar for Chrome on macOS, in the spirit of Arc: Favorites as tiles, Spaces with their own pinned tabs, a command bar, Auto Archive of idle tabs. Everything you arrange stays in Chrome's own bookmarks and pinned tabs.</p>
+        <ul>
+          <li><strong>Arbalète for Mac</strong>, the companion app that shows the sidebar at the left edge of Chrome's window: <a href="https://github.com/poparchi/arbalete/releases/latest">download the latest release</a>. Signed with a Developer ID and notarized by Apple; each release gives its SHA-256. Open the disk image, open Arbalète and click Install. Opened again, it offers to uninstall.</li>
+          <li><strong>The extension</strong> comes from the Chrome Web Store; its page will be linked here once published.</li>
+          <li><strong>Privacy policy</strong>: <a href="privacy/">no account, no server, no analytics, no advertising</a>.</li>
+          <li><strong>Questions, bugs, requests</strong>: <a href="https://github.com/poparchi/arbalete/issues">issues</a>.</li>
+        </ul>
+      </section>
+
+      <section id="fr" lang="fr">
+        <header><img src="icon-128.png" alt="" /><h1>Arbalète</h1></header>
+        <p class="lead">Une barre latérale pour Chrome sur macOS, dans l'esprit d'Arc : Favoris en tuiles, Spaces avec leurs onglets épinglés, barre de commande, archivage automatique des onglets inactifs. Tout ce que vous rangez reste dans les favoris et les onglets épinglés de Chrome.</p>
+        <ul>
+          <li><strong>Arbalète pour Mac</strong>, l'app compagnon qui affiche la barre au bord gauche de la fenêtre de Chrome : <a href="https://github.com/poparchi/arbalete/releases/latest">télécharger la dernière version</a>. Signée avec un Developer ID et notarisée par Apple ; chaque version donne son SHA-256. Ouvrez l'image disque, ouvrez Arbalète et cliquez sur Install. Rouverte, elle propose de se désinstaller.</li>
+          <li><strong>L'extension</strong> vient du Chrome Web Store ; sa page sera indiquée ici une fois publiée.</li>
+          <li><strong>Politique de confidentialité</strong> : <a href="privacy/#fr">ni compte, ni serveur, ni mesure d'audience, ni publicité</a>.</li>
+          <li><strong>Questions, défauts, demandes</strong> : <a href="https://github.com/poparchi/arbalete/issues">tickets</a>.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
