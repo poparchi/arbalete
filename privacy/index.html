@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arbalète privacy policy</title>
+    <!-- The Chrome Web Store's privacy policy page (docs/web-store.md), published at
+         https://poparchi.github.io/arbalete/privacy/ by `npm run publish:site`: the text of
+         docs/privacy-policy.md in English, then in French. Self-contained: no script, font or
+         request to anywhere. -->
+    <style>
+      :root { color-scheme: light dark; --fg: #1d1b26; --muted: #5c566a; --bg: #fbfaf7; --line: #e7e2ec; --accent: #3d33d6; }
+      @media (prefers-color-scheme: dark) { :root { --fg: #ece9f3; --muted: #a7a0b6; --bg: #16141c; --line: #2c2836; --accent: #9d97ff; } }
+      body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, system-ui, "Segoe UI", sans-serif; }
+      main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+      nav { display: flex; gap: 16px; font-size: 14px; }
+      a { color: var(--accent); }
+      h1 { font-size: 30px; line-height: 1.2; margin: 24px 0 4px; letter-spacing: -0.01em; }
+      h2 { font-size: 19px; margin: 32px 0 8px; }
+      .date { color: var(--muted); margin: 0 0 16px; }
+      section + section { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 8px; }
+      li { margin: 6px 0; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav><a href="#en">English</a><a href="#fr" hreflang="fr">Français</a></nav>
+
+      <section id="en" lang="en">
+        <h1>Arbalète privacy policy</h1>
+        <p class="date">October 28, 2026</p>
+        <p>Arbalète is a Chrome extension that shows your tabs, bookmarks and tab groups as a sidebar, with an optional companion app for macOS. It has no account, no server, no analytics and no advertising.</p>
+
+        <h2>What Arbalète reads, and where it stays</h2>
+        <ul>
+          <li><strong>Your tabs, bookmarks and tab groups</strong>, to show and organize them. What you arrange is saved in Chrome's own bookmarks and pinned tabs, as if done in Chrome.</li>
+          <li><strong>Its settings and archive</strong> (the order, colors and icons of your Spaces, which tab belongs to which Space, and the tabs archived after a period of inactivity) are kept in the extension's storage on your device. Archived tabs are deleted after 30 days at most, and can be removed at any time.</li>
+          <li><strong>Chrome's most visited sites and icons</strong>, from Chrome itself, to suggest and show pages.</li>
+          <li><strong>Only if you turn them on in Arbalète's settings:</strong> Chrome's history (suggestions while you type), Chrome's downloads (listed in the sidebar), and per-site permissions you set from the sidebar. Turning them off gives the permission back to Chrome.</li>
+        </ul>
+        <p>None of this leaves your device, except as below.</p>
+
+        <h2>The companion app for macOS, if you install it</h2>
+        <p>It runs on the same Mac, started by Chrome for the extension, and exchanges data with the extension through Chrome only. It sends nothing over the network. It:</p>
+        <ul>
+          <li>follows the pointer's position and which app is in front, to show the sidebar at the left edge of Chrome's window;</li>
+          <li>reads one Chrome setting, whether Chrome expands its tab column on hover, from Chrome's preferences file, read only, for the extension's setup page;</li>
+          <li>with your permission (Accessibility), answers its keyboard shortcuts in Chrome;</li>
+          <li>with your permission (Screen Recording), takes pictures of Chrome's window only, for the recent tabs switcher, kept in memory and never saved;</li>
+          <li>when you choose Copy or Move to Trash on a download, copies that downloaded file or moves it to the Trash, where you can put it back.</li>
+        </ul>
+
+        <h2>What leaves your device</h2>
+        <p><strong>Google's search suggestions, only if you turn them on:</strong> what you type in the command bar is sent to Google to get search suggestions, as Chrome's address bar does, without cookies or referrer. <a href="https://policies.google.com/privacy">Google's privacy policy</a> applies to that request.</p>
+        <p>Arbalète does not sell, share or transfer your data, and does not use it for advertising or any purpose other than the sidebar's features.</p>
+
+        <h2>Removing it</h2>
+        <p>Removing the extension deletes its storage. Your bookmarks, pinned tabs and tab groups stay in Chrome. Site permissions it set are removed by Chrome with it. Opening the companion app again offers to uninstall it: the app and its declaration to Chrome go to the Trash.</p>
+
+        <h2>Contact</h2>
+        <p>Questions and requests: open an issue at <a href="https://github.com/poparchi/arbalete/issues">github.com/poparchi/arbalete/issues</a>, or write to the contact e-mail shown on Arbalète's Chrome Web Store page.</p>
+      </section>
+
+      <section id="fr" lang="fr">
+        <h1>Politique de confidentialité d'Arbalète</h1>
+        <p class="date">28 octobre 2026</p>
+        <p>Arbalète est une extension Chrome qui présente vos onglets, favoris et groupes d'onglets dans une barre latérale, avec une app compagnon facultative pour macOS. Elle n'a ni compte, ni serveur, ni mesure d'audience, ni publicité.</p>
+
+        <h2>Ce qu'Arbalète lit, et où cela reste</h2>
+        <ul>
+          <li><strong>Vos onglets, favoris et groupes d'onglets</strong>, pour les afficher et les organiser. Ce que vous rangez est enregistré dans les favoris et onglets épinglés de Chrome, comme si vous le faisiez dans Chrome.</li>
+          <li><strong>Ses réglages et son archive</strong> (l'ordre, les couleurs et les icônes de vos Spaces, le Space de chaque onglet, et les onglets archivés après une période d'inactivité) restent dans le stockage de l'extension, sur votre appareil. Les onglets archivés sont supprimés au bout de 30 jours au plus, et peuvent l'être à tout moment.</li>
+          <li><strong>Les sites les plus visités et les icônes de Chrome</strong>, fournis par Chrome lui-même, pour suggérer et afficher les pages.</li>
+          <li><strong>Seulement si vous les activez dans les réglages d'Arbalète :</strong> l'historique de Chrome (suggestions pendant la saisie), les téléchargements de Chrome (listés dans la barre), et les autorisations par site que vous réglez depuis la barre. Les désactiver rend l'autorisation à Chrome.</li>
+        </ul>
+        <p>Rien de tout cela ne quitte votre appareil, sauf ce qui suit.</p>
+
+        <h2>L'app compagnon pour macOS, si vous l'installez</h2>
+        <p>Elle tourne sur le même Mac, lancée par Chrome pour l'extension, et n'échange des données avec l'extension que par Chrome. Elle n'envoie rien sur le réseau. Elle :</p>
+        <ul>
+          <li>suit la position du pointeur et l'app au premier plan, pour afficher la barre au bord gauche de la fenêtre de Chrome ;</li>
+          <li>lit un seul réglage de Chrome, le déploiement de sa colonne d'onglets au survol, dans le fichier de préférences de Chrome, en lecture seule, pour la page de configuration de l'extension ;</li>
+          <li>avec votre autorisation (Accessibilité), répond à ses raccourcis clavier dans Chrome ;</li>
+          <li>avec votre autorisation (Enregistrement de l'écran), prend des images de la seule fenêtre de Chrome, pour le sélecteur d'onglets récents, gardées en mémoire et jamais enregistrées ;</li>
+          <li>quand vous choisissez Copier ou Placer dans la corbeille sur un téléchargement, copie ce fichier téléchargé ou le place dans la Corbeille, d'où vous pouvez le remettre.</li>
+        </ul>
+
+        <h2>Ce qui quitte votre appareil</h2>
+        <p><strong>Les suggestions de recherche de Google, seulement si vous les activez :</strong> ce que vous tapez dans la barre de commande est envoyé à Google pour obtenir des suggestions, comme le fait la barre d'adresse de Chrome, sans cookies ni référent. La <a href="https://policies.google.com/privacy?hl=fr">politique de confidentialité de Google</a> s'applique à cette requête.</p>
+        <p>Arbalète ne vend, ne partage ni ne transfère vos données, et ne les utilise ni pour la publicité, ni pour autre chose que les fonctions de la barre.</p>
+
+        <h2>La retirer</h2>
+        <p>Retirer l'extension efface son stockage. Vos favoris, onglets épinglés et groupes d'onglets restent dans Chrome. Les autorisations de sites qu'elle a réglées sont retirées par Chrome avec elle. Rouvrir l'app compagnon propose de la désinstaller : l'app et sa déclaration à Chrome vont à la Corbeille.</p>
+
+        <h2>Contact</h2>
+        <p>Questions et demandes : ouvrez un ticket sur <a href="https://github.com/poparchi/arbalete/issues">github.com/poparchi/arbalete/issues</a>, ou écrivez à l'adresse de contact indiquée sur la page d'Arbalète dans le Chrome Web Store.</p>
+      </section>
+    </main>
+  </body>
+</html>
