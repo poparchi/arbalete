@@ -1,6 +1,6 @@
 # Arbalète
 
-A sidebar for Chrome on macOS, in the spirit of Arc: Favorites as tiles, Spaces with their own
+A sidebar for Chrome, in the spirit of Arc: Favorites as tiles, Spaces with their own
 pinned tabs, a command bar, Auto Archive of idle tabs. Everything you arrange stays in Chrome's own
 bookmarks and pinned tabs.
 
@@ -17,7 +17,7 @@ This repository holds what you download and read; the source code is not public.
 
 ## En français
 
-Une barre latérale pour Chrome sur macOS, dans l'esprit d'Arc : Favoris en tuiles, Spaces avec
+Une barre latérale pour Chrome, dans l'esprit d'Arc : Favoris en tuiles, Spaces avec
 leurs onglets épinglés, barre de commande, archivage automatique des onglets inactifs. Tout ce que
 vous rangez reste dans les favoris et les onglets épinglés de Chrome.
 
