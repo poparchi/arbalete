@@ -21,9 +21,10 @@ This repository holds what you download and read; the source code is not public.
 
 - **The extension** comes from the Chrome Web Store; its page will be linked here once published.
   The sidebar is in Chrome's side panel, on any computer: click Arbalète's icon in the toolbar.
-- **Arbalète for Mac**, an optional companion app for macOS only, coming soon: it shows the sidebar
-  at the left edge of Chrome's window, outside any page. It will be signed with a Developer ID and
-  notarized by Apple, each release with its SHA-256.
+- **Arbalète for Mac**, an optional companion app for macOS only, free: it shows the sidebar at the
+  left edge of Chrome's window, outside any page. [How to install it](https://poparchi.github.io/arbalete/mac/):
+  it is not notarized by Apple, which takes a paid membership, so macOS asks you to allow it once per
+  version. Each release comes with its SHA-256.
 - **Privacy policy**: [poparchi.github.io/arbalete/privacy](https://poparchi.github.io/arbalete/privacy/).
   No account, no server, no analytics, no advertising.
 - **Questions, bugs, requests**: [issues](https://github.com/poparchi/arbalete/issues).
@@ -53,8 +54,10 @@ vous rangez reste dans les favoris et les onglets épinglés de Chrome.
 - **L'extension** vient du Chrome Web Store ; sa page sera indiquée ici une fois publiée. La barre
   est dans le panneau latéral de Chrome, sur tout ordinateur : cliquez sur l'icône d'Arbalète dans
   la barre d'outils.
-- **Arbalète pour Mac**, une app compagnon facultative pour macOS uniquement, bientôt disponible :
-  elle affiche la barre au bord gauche de la fenêtre de Chrome, en dehors de toute page. Elle sera
-  signée avec un Developer ID et notarisée par Apple, chaque version avec son SHA-256.
+- **Arbalète pour Mac**, une app compagnon facultative et gratuite pour macOS uniquement : elle
+  affiche la barre au bord gauche de la fenêtre de Chrome, en dehors de toute page.
+  [L'installer](https://poparchi.github.io/arbalete/mac/#fr) : elle n'est pas notarisée par Apple, ce
+  qui demande une adhésion payante, et macOS vous demande donc de l'autoriser une fois par version.
+  Chaque version est publiée avec son SHA-256.
 - **Politique de confidentialité** : [poparchi.github.io/arbalete/privacy](https://poparchi.github.io/arbalete/privacy/#fr).
 - **Questions, défauts, demandes** : [tickets](https://github.com/poparchi/arbalete/issues).
