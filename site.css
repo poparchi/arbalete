@@ -1,0 +1,48 @@
+/* The public site's pages (docs/public-*.html, published by `npm run publish:site` at
+   https://poparchi.github.io/arbalete/site.css): system fonts, no request to anywhere but this site,
+   light and dark as the Mac shows them. The privacy policy keeps its own styles. */
+:root { color-scheme: light dark; --fg: #1d1b26; --muted: #5c566a; --bg: #fbfaf7; --surface: #fff; --line: #e7e2ec; --accent: #3d33d6; --on-accent: #fff; --note: #f3f1fb; }
+@media (prefers-color-scheme: dark) { :root { --fg: #ece9f3; --muted: #a7a0b6; --bg: #16141c; --surface: #1e1b26; --line: #2c2836; --accent: #9d97ff; --on-accent: #16141c; --note: #221f2e; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, system-ui, "Segoe UI", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; font-size: 14px; }
+nav .home { margin-right: auto; font-weight: 600; text-decoration: none; color: var(--fg); }
+nav [aria-current] { color: var(--muted); text-decoration: none; }
+a { color: var(--accent); }
+header { display: flex; align-items: center; gap: 16px; margin: 28px 0 8px; }
+header img { width: 64px; height: 64px; flex: none; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: 19px; line-height: 1.3; margin: 40px 0 0; }
+h3 { font-size: 16px; margin: 0; }
+p { margin: 12px 0 0; }
+.lead { color: var(--muted); margin: 8px 0 0; font-size: 17px; }
+.note { margin: 20px 0 0; padding: 14px 18px; border-radius: 12px; background: var(--note); }
+.note p { margin: 0; }
+.note p + p { margin-top: 8px; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin: 20px 0 0; }
+.cta { display: inline-block; padding: 11px 18px; border-radius: 10px; background: var(--accent); color: var(--on-accent); font-weight: 650; text-decoration: none; }
+.cta.secondary { background: transparent; color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent); }
+.soon { font-size: 14px; color: var(--muted); }
+figure { margin: 24px 0 0; }
+figure img { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 0 0 1px var(--line), 0 10px 30px rgb(0 0 0 / 0.12); }
+figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); }
+.modes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 16px 0 0; }
+.modes > div { padding: 14px 18px; border-radius: 12px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); }
+.modes p { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+ol.steps { counter-reset: step; list-style: none; margin: 16px 0 0; padding: 0; }
+ol.steps > li { counter-increment: step; position: relative; margin: 0 0 12px; padding: 14px 18px 14px 58px; border-radius: 12px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); }
+ol.steps > li::before { content: counter(step); position: absolute; left: 18px; top: 14px; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--on-accent); font-weight: 650; font-size: 14px; line-height: 26px; text-align: center; }
+ol.steps p { margin: 0; }
+ol.steps p + p { margin-top: 6px; }
+blockquote { margin: 8px 0 0; padding: 2px 0 2px 12px; border-left: 3px solid var(--line); color: var(--muted); }
+blockquote strong { color: var(--fg); }
+.button { font-weight: 600; white-space: nowrap; }
+.small { font-size: 14px; color: var(--muted); }
+code { font: 13.5px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; overflow-wrap: anywhere; }
+details { margin: 16px 0 0; padding: 12px 18px; border-radius: 12px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); }
+summary { cursor: pointer; font-weight: 600; }
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+.other-language { margin: 16px 0 0; padding: 10px 14px; border-radius: 10px; background: var(--note); font-size: 15px; }
+.other-language[hidden] { display: none; }
+.notice { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
