@@ -3,73 +3,99 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Arbalète</title>
-    <meta name="description" content="A sidebar for Chrome: Favorites, Spaces, pinned tabs, a command bar and Auto Archive, in Chrome's own data." />
+    <title>Arbalète: a sidebar for Chrome, in the spirit of Arc</title>
+    <meta name="description" content="Arbalète keeps your Chrome tabs in a sidebar: Favorites, Spaces, pinned tabs, a command bar and Auto Archive. Free, no account, with a free companion app for Mac." />
+    <link rel="canonical" href="https://poparchi.github.io/arbalete/" />
+    <link rel="alternate" hreflang="en" href="https://poparchi.github.io/arbalete/" />
+    <link rel="alternate" hreflang="fr" href="https://poparchi.github.io/arbalete/fr/" />
+    <link rel="alternate" hreflang="x-default" href="https://poparchi.github.io/arbalete/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Arbalète" />
+    <meta property="og:url" content="https://poparchi.github.io/arbalete/" />
+    <meta property="og:title" content="Arbalète: a sidebar for Chrome" />
+    <meta property="og:description" content="Favorites, Spaces, pinned tabs, a command bar and Auto Archive, in Chrome's own data. With a free app for Mac." />
+    <meta property="og:image" content="https://poparchi.github.io/arbalete/site/og-en.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="icon-128.png" />
-    <!-- The public repository's home page, https://poparchi.github.io/arbalete/, published by
-         `npm run publish:site` (the same text as docs/public-readme.md). Self-contained like the
-         privacy policy: no script, font or request to anywhere but this site. -->
-    <style>
-      :root { color-scheme: light dark; --fg: #1d1b26; --muted: #5c566a; --bg: #fbfaf7; --line: #e7e2ec; --accent: #3d33d6; }
-      @media (prefers-color-scheme: dark) { :root { --fg: #ece9f3; --muted: #a7a0b6; --bg: #16141c; --line: #2c2836; --accent: #9d97ff; } }
-      body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, system-ui, "Segoe UI", sans-serif; }
-      main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
-      nav { display: flex; gap: 16px; font-size: 14px; }
-      a { color: var(--accent); }
-      header { display: flex; align-items: center; gap: 16px; margin: 24px 0 8px; }
-      header img { width: 64px; height: 64px; }
-      h1 { font-size: 30px; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
-      .lead { color: var(--muted); margin: 0 0 16px; }
-      section + section { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 8px; }
-      li { margin: 8px 0; }
-      h2 { font-size: 18px; line-height: 1.3; margin: 28px 0 0; }
-      .notice { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
-    </style>
+    <link rel="stylesheet" href="site.css" />
+    <!-- The site's home page, https://poparchi.github.io/arbalete/ (docs/public-index-fr.html in
+         French), published by `npm run publish:site`. Its one script points a French browser to the
+         French page, and sends the former #fr anchor there. No request to anywhere but this site. -->
+    <script>
+      if (location.hash === "#fr") location.replace("fr/");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Arbalète",
+        "description": "A sidebar for Google Chrome: Favorites, Spaces, pinned tabs, a command bar and Auto Archive, with a free companion app for macOS.",
+        "url": "https://poparchi.github.io/arbalete/",
+        "image": "https://poparchi.github.io/arbalete/site/sidebar-en.jpg",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Google Chrome; macOS 13 or later for the app",
+        "inLanguage": ["en", "fr"],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+        "publisher": { "@type": "Organization", "name": "PopArchi" }
+      }
+    </script>
   </head>
   <body>
     <main>
-      <nav><a href="#en">English</a><a href="#fr" hreflang="fr">Français</a></nav>
+      <nav><a class="home" href="./">Arbalète</a><a aria-current="page">English</a><a href="fr/" hreflang="fr" lang="fr">Français</a></nav>
+      <p class="other-language" id="other-language" lang="fr" hidden><a href="fr/">Cette page existe en français.</a></p>
+      <script>
+        if (/^fr\b/i.test(navigator.language)) document.getElementById("other-language").hidden = false;
+      </script>
 
-      <section id="en" lang="en">
-        <header><img src="icon-128.png" alt="" /><h1>Arbalète</h1></header>
-        <p class="lead">A sidebar for Chrome, in the spirit of Arc: Favorites as tiles, Spaces with their own pinned tabs, a command bar, Auto Archive of idle tabs. Everything you arrange stays in Chrome's own bookmarks and pinned tabs.</p>
-        <h2>What it does</h2>
-        <ul>
-          <li>Favorites as tiles; Spaces with their own pinned tabs, folders, icon and theme color; Today, your other tabs, with Chrome's tab groups.</li>
-          <li>Pinned tabs that keep their address, and Auto Archive of the tabs you no longer look at.</li>
-          <li>A command bar for pages, searches, open tabs, bookmarks and history.</li>
-          <li>A library of your Spaces, Chrome's downloads and each site's permissions, from the sidebar.</li>
-          <li>With Arbalète for Mac: the sidebar at the window's left edge, sliding in or pinned beside the page; the command bar centered over Chrome; a Ctrl+Tab switcher of your recent tabs, with previews; keyboard shortcuts for tabs and Spaces.</li>
-        </ul>
-        <h2>Where to find it</h2>
-        <ul>
-          <li><strong>The extension</strong> comes from the Chrome Web Store; its page will be linked here once published. The sidebar is in Chrome's side panel, on any computer: click Arbalète's icon in the toolbar, then Open Sidebar.</li>
-          <li><strong>Arbalète for Mac</strong>, an optional companion app for macOS only, free: it shows the sidebar at the left edge of Chrome's window, outside any page. <a href="mac/">How to install it</a>: it is not notarized by Apple, which takes a paid membership, so macOS asks you to allow it once per version. Each release comes with its SHA-256.</li>
-          <li><strong>Privacy policy</strong>: <a href="privacy/">no account, no server, no analytics, no advertising</a>.</li>
-          <li><strong>Questions, bugs, requests</strong>: <a href="https://github.com/poparchi/arbalete/issues">issues</a>.</li>
-        </ul>
-      </section>
+      <header><img src="icon-128.png" alt="" /><h1>Arbalète</h1></header>
+      <p class="lead">A sidebar for Google Chrome that keeps your tabs in order. Arc, a browser, is known for its own; Arbalète brings the idea to Chrome. No need to know Arc.</p>
+      <div class="actions">
+        <a class="cta" href="mac/">Arbalète for Mac, free</a>
+        <span class="soon">The extension is coming soon to the Chrome Web Store.</span>
+      </div>
 
-      <section id="fr" lang="fr">
-        <header><img src="icon-128.png" alt="" /><h1>Arbalète</h1></header>
-        <p class="lead">Une barre latérale pour Chrome, dans l'esprit d'Arc : Favoris en tuiles, Spaces avec leurs onglets épinglés, barre de commande, archivage automatique des onglets inactifs. Tout ce que vous rangez reste dans les favoris et les onglets épinglés de Chrome.</p>
-        <h2>Ce qu'elle fait</h2>
-        <ul>
-          <li>Favoris en tuiles ; Spaces avec leurs onglets épinglés, dossiers, icône et couleur ; Today, vos autres onglets, avec les groupes d'onglets de Chrome.</li>
-          <li>Des onglets épinglés qui gardent leur adresse, et l'archivage automatique des onglets que vous ne regardez plus.</li>
-          <li>Une barre de commande pour les pages, les recherches, les onglets ouverts, les favoris et l'historique.</li>
-          <li>Une bibliothèque de vos Spaces, les téléchargements de Chrome et les autorisations de chaque site, depuis la barre.</li>
-          <li>Avec Arbalète pour Mac : la barre au bord gauche de la fenêtre, qui apparaît ou reste épinglée à côté de la page ; la barre de commande centrée sur Chrome ; un sélecteur Ctrl+Tab de vos onglets récents, avec aperçus ; des raccourcis clavier pour les onglets et les Spaces.</li>
-        </ul>
-        <h2>Où la trouver</h2>
-        <ul>
-          <li><strong>L'extension</strong> vient du Chrome Web Store ; sa page sera indiquée ici une fois publiée. La barre est dans le panneau latéral de Chrome, sur tout ordinateur : cliquez sur l'icône d'Arbalète dans la barre d'outils, puis Ouvrir la sidebar.</li>
-          <li><strong>Arbalète pour Mac</strong>, une app compagnon facultative et gratuite pour macOS uniquement : elle affiche la barre au bord gauche de la fenêtre de Chrome, en dehors de toute page. <a href="mac/#fr">L'installer</a> : elle n'est pas notarisée par Apple, ce qui demande une adhésion payante, et macOS vous demande donc de l'autoriser une fois par version. Chaque version est publiée avec son SHA-256.</li>
-          <li><strong>Politique de confidentialité</strong> : <a href="privacy/#fr">ni compte, ni serveur, ni mesure d'audience, ni publicité</a>.</li>
-          <li><strong>Questions, défauts, demandes</strong> : <a href="https://github.com/poparchi/arbalete/issues">tickets</a>.</li>
-        </ul>
-      </section>
-      <footer class="notice">© 2026 PopArchi. All rights reserved. Tous droits réservés.</footer>
+      <figure>
+        <img src="site/sidebar-en.jpg" width="1280" height="800" alt="Arbalète's sidebar on the left of a page: Favorites as tiles, an open folder of the Personal Space and today's tabs." />
+        <figcaption>Favorites, a Space and its folders, then today's tabs.</figcaption>
+      </figure>
+
+      <h2>What it does</h2>
+      <ul>
+        <li><strong>Your everyday sites as tiles</strong>, the Favorites, one click away.</li>
+        <li><strong>Spaces</strong>, one per project or part of your life, each with its own pinned tabs, folders, icon and color.</li>
+        <li><strong>Today</strong>: your other tabs, newest on top, with Chrome's tab groups.</li>
+        <li><strong>Auto Archive</strong>: a tab you have not looked at for 12 hours closes and goes to Archived Tabs, one click to reopen it. The delay can be changed.</li>
+        <li><strong>A command bar</strong> to open a page, search, or find an open tab, a bookmark or a page you visited.</li>
+        <li><strong>Chrome's downloads</strong> and <strong>each site's permissions</strong>, from the sidebar.</li>
+        <li><strong>Everything stays in Chrome</strong>: Favorites are pinned tabs and bookmarks, Spaces are bookmark folders. Remove Arbalète and they all stay.</li>
+      </ul>
+
+      <h2>On any computer, and better on a Mac</h2>
+      <div class="modes">
+        <div>
+          <h3>Without an app, on any computer</h3>
+          <p>The sidebar opens in Chrome's side panel: click Arbalète's icon in the toolbar, then Open Sidebar.</p>
+        </div>
+        <div>
+          <h3>With Arbalète for Mac</h3>
+          <p>A free, optional app for macOS 13 or later: the sidebar at the window's left edge, outside any page, the command bar in the middle of the screen and a Ctrl+Tab tab switcher. <a href="mac/">Install it</a></p>
+        </div>
+      </div>
+      <figure>
+        <img src="site/command-bar-en.jpg" width="1280" height="800" alt="The command bar in the middle of the window, offering an open tab, bookmarks and a folder for the typed text." loading="lazy" />
+        <figcaption>With Arbalète for Mac: the command bar in the middle of the window, on ⌃T, or ⌘T with the keyboard shortcuts.</figcaption>
+      </figure>
+
+      <h2>Privacy</h2>
+      <p>No account, no server, no analytics, no advertising. Arbalète shows nothing inside web pages and has no access to them. History, Google's search suggestions, downloads and site permissions stay off until you turn them on. <a href="privacy/">Privacy policy</a></p>
+
+      <h2>Who publishes it, and contact</h2>
+      <p>Arbalète is published by PopArchi. A question, a problem or a request: write to <a href="mailto:arbalete@poparchi.com">arbalete@poparchi.com</a>, or open an <a href="https://github.com/poparchi/arbalete/issues">issue on GitHub</a> if you have an account there.</p>
+
+      <p class="notice">© 2026 PopArchi. All rights reserved. <a href="https://github.com/poparchi/arbalete/blob/main/LICENSE">License</a></p>
     </main>
   </body>
 </html>
