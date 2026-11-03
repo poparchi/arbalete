@@ -17,7 +17,8 @@ bookmarks and pinned tabs.
 
 ### Where to find it
 
-This repository holds what you download and read; the source code is not public.
+This repository holds what you download and read; the source code is not public. Site:
+[poparchi.github.io/arbalete](https://poparchi.github.io/arbalete/).
 
 - **The extension** comes from the Chrome Web Store; its page will be linked here once published.
   The sidebar is in Chrome's side panel, on any computer: click Arbalète's icon in the toolbar, then
@@ -28,7 +29,7 @@ This repository holds what you download and read; the source code is not public.
   version. Each release comes with its SHA-256.
 - **Privacy policy**: [poparchi.github.io/arbalete/privacy](https://poparchi.github.io/arbalete/privacy/).
   No account, no server, no analytics, no advertising.
-- **Questions, bugs, requests**: [issues](https://github.com/poparchi/arbalete/issues).
+- **Questions, bugs, requests**: arbalete@poparchi.com, or the [issues](https://github.com/poparchi/arbalete/issues).
 
 ## En français
 
@@ -52,17 +53,20 @@ vous rangez reste dans les favoris et les onglets épinglés de Chrome.
 
 ### Où la trouver
 
+Site : [poparchi.github.io/arbalete/fr](https://poparchi.github.io/arbalete/fr/).
+
+
 - **L'extension** vient du Chrome Web Store ; sa page sera indiquée ici une fois publiée. La barre
   est dans le panneau latéral de Chrome, sur tout ordinateur : cliquez sur l'icône d'Arbalète dans
   la barre d'outils, puis Ouvrir la sidebar.
 - **Arbalète pour Mac**, une app compagnon facultative et gratuite pour macOS uniquement : elle
   affiche la barre au bord gauche de la fenêtre de Chrome, en dehors de toute page.
-  [L'installer](https://poparchi.github.io/arbalete/mac/#fr) : elle n'est pas notarisée par Apple, ce
+  [L'installer](https://poparchi.github.io/arbalete/fr/mac/) : elle n'est pas notarisée par Apple, ce
   qui demande une adhésion payante, et macOS vous demande donc de l'autoriser une fois par version.
   Chaque version est publiée avec son SHA-256.
 - **Politique de confidentialité** : [poparchi.github.io/arbalete/privacy](https://poparchi.github.io/arbalete/privacy/#fr).
-- **Questions, défauts, demandes** : [tickets](https://github.com/poparchi/arbalete/issues).
+- **Questions, défauts, demandes** : arbalete@poparchi.com, ou les [tickets](https://github.com/poparchi/arbalete/issues).
 
 ---
 
-© 2026 PopArchi. All rights reserved. Tous droits réservés.
+© 2026 PopArchi. All rights reserved. Tous droits réservés. [License / Licence](LICENSE)
