@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The public site's pages for search engines, https://poparchi.github.io/arbalete/sitemap.xml,
+     published by `npm run publish:site`; each page with its other language. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://poparchi.github.io/arbalete/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poparchi.github.io/arbalete/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poparchi.github.io/arbalete/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poparchi.github.io/arbalete/" />
+  </url>
+  <url>
+    <loc>https://poparchi.github.io/arbalete/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poparchi.github.io/arbalete/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poparchi.github.io/arbalete/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poparchi.github.io/arbalete/" />
+  </url>
+  <url>
+    <loc>https://poparchi.github.io/arbalete/mac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poparchi.github.io/arbalete/mac/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poparchi.github.io/arbalete/fr/mac/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poparchi.github.io/arbalete/mac/" />
+  </url>
+  <url>
+    <loc>https://poparchi.github.io/arbalete/fr/mac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poparchi.github.io/arbalete/mac/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poparchi.github.io/arbalete/fr/mac/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poparchi.github.io/arbalete/mac/" />
+  </url>
+  <url>
+    <loc>https://poparchi.github.io/arbalete/privacy/</loc>
+  </url>
+</urlset>
