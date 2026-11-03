@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Installer Arbalète pour Mac, l'app gratuite de la barre latérale pour Chrome</title>
+    <meta name="description" content="Installer Arbalète pour Mac, l'app compagnon gratuite de l'extension Arbalète pour Chrome, et l'autoriser dans les réglages Confidentialité et sécurité de macOS, en une minute." />
+    <link rel="canonical" href="https://poparchi.github.io/arbalete/fr/mac/" />
+    <link rel="alternate" hreflang="en" href="https://poparchi.github.io/arbalete/mac/" />
+    <link rel="alternate" hreflang="fr" href="https://poparchi.github.io/arbalete/fr/mac/" />
+    <link rel="alternate" hreflang="x-default" href="https://poparchi.github.io/arbalete/mac/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Arbalète" />
+    <meta property="og:url" content="https://poparchi.github.io/arbalete/fr/mac/" />
+    <meta property="og:title" content="Installer Arbalète pour Mac" />
+    <meta property="og:description" content="L'app compagnon gratuite de l'extension Arbalète : la barre au bord de la fenêtre de Chrome, la barre de commande au centre et le sélecteur d'onglets Ctrl+Tab." />
+    <meta property="og:image" content="https://poparchi.github.io/arbalete/site/og-fr.jpg" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../../icon-128.png" />
+    <link rel="stylesheet" href="../../site.css" />
+    <!-- The French install page of the companion app made without Apple's notarization,
+         https://poparchi.github.io/arbalete/fr/mac/ (docs/public-install.html in English), published by
+         `npm run publish:site` after the app's release (`npm run publish:mac`), whose Arbalete.dmg
+         the button downloads. macOS's own words are quoted from its French texts: the alerts of macOS
+         26 (CoreServicesUIAgent and Privacy & Security, checked against the real ones on 2026-10-30),
+         which name the app after its file, Arbalete; Accessibility's prompt from UniversalAccess
+         (universalAccessAuthWarn); macOS 13 and 14 from Apple's own guide. No request
+         to anywhere but this site. -->
+  </head>
+  <body>
+    <main>
+      <nav><a class="home" href="../">Arbalète</a><a href="../../mac/" hreflang="en" lang="en">English</a><a aria-current="page">Français</a></nav>
+
+      <header><img src="../../icon-128.png" alt="" /><h1>Installer Arbalète pour Mac</h1></header>
+      <p class="lead">L'app compagnon gratuite de l'extension Arbalète, publiée par PopArchi : elle affiche la barre au bord gauche de la fenêtre de Chrome, en dehors de toute page, avec la barre de commande au centre de l'écran et le sélecteur d'onglets Ctrl+Tab. Pour macOS 13 ou ultérieur, sur Mac Apple silicon ou Intel, avec l'extension Arbalète dans Google Chrome.</p>
+
+      <div class="note">
+        <p><strong>Pourquoi macOS vous demande d'abord.</strong> Apple ne vérifie («&nbsp;notarise&nbsp;») que les apps des développeurs inscrits à son programme payant ; Arbalète pour Mac, gratuite, n'en fait pas partie. La première fois que vous ouvrez chaque version, macOS la bloque donc avec un avertissement, jusqu'à ce que vous l'autorisiez vous-même dans ses réglages. Cela prend quelques minutes.</p>
+        <p>L'app est signée par Arbalète, pas par Apple, avec le même certificat à chaque version : ce que vous lui autorisez reste d'une version à l'autre.</p>
+        <p><strong>Ce qu'Arbalète ne vous demande jamais</strong> : désactiver Gatekeeper, modifier «&nbsp;Autoriser les applications téléchargées de&nbsp;», ou coller une commande dans le Terminal pour l'installer. Si une page ou un message vous le demande, cela ne vient pas d'Arbalète. Téléchargez-la seulement depuis cette page.</p>
+        <p>Vous pouvez aussi vous en passer : sans l'app, la sidebar fonctionne déjà dans le panneau latéral de Chrome.</p>
+      </div>
+
+      <div class="actions">
+        <a class="cta" href="https://github.com/poparchi/arbalete/releases/latest/download/Arbalete.dmg">Télécharger Arbalète pour Mac</a>
+        <a href="https://github.com/poparchi/arbalete/releases/latest">Notes de la dernière version</a>
+      </div>
+      <p class="small">Le fichier s'appelle Arbalete.dmg et vient de la page des versions du projet, sur GitHub. Si Chrome prévient qu'il est rarement téléchargé, comme toute app récente, vous pouvez le conserver depuis la liste des téléchargements de Chrome.</p>
+
+      <p>Votre version de macOS : menu Pomme › <strong>À propos de ce Mac</strong>. Suivez ensuite la partie qui lui correspond.</p>
+
+      <h2>Sur macOS 15 Sequoia ou 26 Tahoe</h2>
+      <ol class="steps">
+        <li>
+          <p>Ouvrez Arbalete.dmg, puis <strong>Arbalete</strong> dans la fenêtre qui s'affiche. macOS ne l'ouvre pas encore :</p>
+          <blockquote><strong>Élément «&nbsp;Arbalete&nbsp;» non ouvert</strong><br />Apple n’a pas pu confirmer que «&nbsp;Arbalete&nbsp;» ne contenait pas de logiciel malveillant susceptible d’endommager votre Mac ou de porter atteinte à votre vie privée.</blockquote>
+          <p>Cliquez sur <span class="button">Terminé</span>. macOS écrit Arbalete sans accent, d'après le nom du fichier : c'est bien Arbalète.</p>
+        </li>
+        <li>
+          <p>Ouvrez <strong>Réglages Système › Confidentialité et sécurité</strong> et descendez jusqu'à <strong>Sécurité</strong> :</p>
+          <blockquote>«&nbsp;Arbalete&nbsp;» a été bloqué pour protéger votre Mac.</blockquote>
+          <p>Cliquez sur <span class="button">Ouvrir quand même</span>. Le bouton reste là environ une heure après votre tentative ; passé ce délai, rouvrez l'app depuis l'image disque.</p>
+        </li>
+        <li>
+          <p>macOS vous avertit une dernière fois : cliquez sur <span class="button">Ouvrir quand même</span>, puis confirmez avec votre mot de passe ou Touch ID. C'est macOS qui le demande : Arbalète ne le voit jamais.</p>
+        </li>
+        <li>
+          <p>Arbalète demande <strong>«&nbsp;Installer Arbalète pour Mac&nbsp;?&nbsp;»</strong> : cliquez sur <span class="button">Installer</span>. Elle se place dans votre dossier Applications, à la place d'une version précédente s'il y en a une, et indique à Chrome qu'il peut la lancer pour l'extension Arbalète ; rien d'autre ne change sur votre Mac. De retour dans Chrome, la page de configuration d'Arbalète trouve l'app d'elle-même et coche son étape.</p>
+          <p>Éjectez ensuite l'image disque ; Arbalete.dmg peut aller à la corbeille. Vous n'aurez pas à ouvrir l'app : Chrome la lance.</p>
+        </li>
+      </ol>
+
+      <h2>Sur macOS 13 Ventura ou 14 Sonoma</h2>
+      <p class="small">L'avertissement y est formulé autrement. Le chemin le plus simple est celui que <a href="https://support.apple.com/fr-fr/guide/mac-help/mh40616/13.0/mac/13.0">décrit Apple</a>.</p>
+      <ol class="steps">
+        <li>
+          <p>Ouvrez Arbalete.dmg. Dans la fenêtre qui s'affiche, cliquez sur <strong>Arbalete</strong> en maintenant la touche Contrôle (ctrl) enfoncée, puis choisissez <span class="button">Ouvrir</span>. Ne choisissez pas de placer l'app dans la corbeille.</p>
+        </li>
+        <li>
+          <p>macOS vous avertit : cliquez sur <span class="button">Ouvrir</span>. S'il n'offre pas ce bouton, ouvrez Réglages Système › Confidentialité et sécurité, cliquez sur <span class="button">Ouvrir quand même</span> (là environ une heure), puis confirmez.</p>
+        </li>
+        <li>
+          <p>Arbalète demande <strong>«&nbsp;Installer Arbalète pour Mac&nbsp;?&nbsp;»</strong> : cliquez sur <span class="button">Installer</span>, comme à l'étape 4 ci-dessus. Puis éjectez l'image disque.</p>
+        </li>
+      </ol>
+
+      <h2>Ensuite, si vous le souhaitez</h2>
+      <p>Les raccourcis clavier (⌘T, ⌘L, Ctrl+Tab… ; ⌘ est Cmd, ⌃ Ctrl, ⌥ Option, ⇧ Maj) et les aperçus des pages dans le sélecteur s'activent dans les réglages d'Arbalète. macOS demande alors une autorisation, que vous pouvez refuser :</p>
+      <ul>
+        <li><strong>Raccourcis clavier : l'Accessibilité.</strong> macOS affiche «&nbsp;… aimerait contrôler cet ordinateur à l’aide des fonctionnalités d’accessibilité&nbsp;» et vous renvoie vers Réglages Système › Confidentialité et sécurité, où vous l'autorisez. L'app reçoit alors les touches pressées pendant que Chrome est au premier plan et ne réagit qu'à ses raccourcis, sans rien garder ni envoyer. Dans les champs de mot de passe, Chrome active la saisie sécurisée de macOS : aucune app ne voit ces touches.</li>
+        <li><strong>Aperçus des pages : l'Enregistrement de l'écran.</strong> macOS vous demande de l'autoriser, dans Réglages Système › Confidentialité et sécurité ; une fois autorisée, l'app se relance d'elle-même. Elle ne capture que la fenêtre de Chrome au premier plan et garde de petites images en mémoire, jamais sur le disque. Sur macOS 15 et ultérieur, macOS peut vous redemander de temps en temps de confirmer.</li>
+      </ul>
+
+      <h2>Mises à jour et désinstallation</h2>
+      <ul>
+        <li><strong>Une nouvelle version</strong> : l'extension vous prévient, par une flèche sur son icône et dans ses réglages ; celle que vous avez marche en attendant. Téléchargez-la ici et refaites les étapes de votre version de macOS : la nouvelle remplace l'ancienne, et les autorisations données restent. Si Chrome nomme le fichier «&nbsp;Arbalete (1).dmg&nbsp;», c'est le même.</li>
+        <li><strong>Désinstaller</strong> : rouvrez Arbalète depuis le dossier Applications et cliquez sur Désinstaller. L'app, et ce qu'elle avait indiqué à Chrome, vont à la corbeille ; vos favoris, onglets et groupes restent dans Chrome. Pour retirer aussi l'extension : clic droit sur son icône dans Chrome, puis Supprimer de Chrome.</li>
+      </ul>
+
+      <details>
+        <summary>Pour les experts : vérifier le fichier et la signature</summary>
+        <p>La page de chaque version donne l'empreinte SHA-256 du fichier. Pour la comparer, dans le Terminal : <code>shasum -a 256 ~/Downloads/Arbalete.dmg</code> (la commande ne fait que lire le fichier).</p>
+        <p>L'app est signée par le certificat «&nbsp;Arbalete Release Signing&nbsp;», dont l'empreinte SHA-256 est <code>7d65fe648d3cdd400a7003f3adf3f06cfacea0a46af3ef05f6ca9ec4fbfbe356</code>. <code>codesign -d -r- /Applications/Arbalete.app</code> affiche l'exigence de l'app, qui se termine par <code>certificate leaf = H"b31837e8c047b0d283506bea0417f06658c2e994"</code> : une autre signature n'est pas la nôtre.</p>
+        <p>Depuis la 0.1.4, chaque version est immuable sur GitHub : ses fichiers ne peuvent plus changer, et GitHub les atteste. Avec l'outil <code>gh</code> : <code>gh release verify-asset v0.1.4 ~/Downloads/Arbalete.dmg -R poparchi/arbalete</code>.</p>
+      </details>
+
+      <p><strong>Un souci pendant l'installation ?</strong> Écrivez à <a href="mailto:arbalete@poparchi.com">arbalete@poparchi.com</a>, avec votre version de macOS et le message affiché.</p>
+      <p class="small"><a href="../../privacy/#fr">Politique de confidentialité</a> · <a href="https://github.com/poparchi/arbalete/issues">Tickets sur GitHub</a> (avec un compte GitHub)</p>
+      <p class="notice">© 2026 PopArchi. Tous droits réservés. <a href="https://github.com/poparchi/arbalete/blob/main/LICENSE">Licence</a></p>
+    </main>
+  </body>
+</html>
