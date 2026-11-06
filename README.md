@@ -20,7 +20,7 @@ bookmarks and pinned tabs.
 This repository holds what you download and read; the source code is not public. Site:
 [poparchi.github.io/arbalete](https://poparchi.github.io/arbalete/).
 
-- **The extension** comes from the Chrome Web Store; its page will be linked here once published.
+- **The extension** comes from the [Chrome Web Store](https://chromewebstore.google.com/detail/jnhllkobhicebmnkamcajgblljiigeed).
   The sidebar is in Chrome's side panel, on any computer: click Arbalète's icon in the toolbar, then
   Open Sidebar.
 - **Arbalète for Mac**, an optional companion app for macOS only, free: it shows the sidebar at the
@@ -33,13 +33,13 @@ This repository holds what you download and read; the source code is not public.
 
 ## En français
 
-Une barre latérale pour Chrome, dans l'esprit d'Arc : Favoris en tuiles, Spaces avec
+Une barre latérale pour Chrome, dans l'esprit d'Arc : Tuiles, Spaces avec
 leurs onglets épinglés, barre de commande, archivage automatique des onglets inactifs. Tout ce que
 vous rangez reste dans les favoris et les onglets épinglés de Chrome.
 
 ### Ce qu'elle fait
 
-- Favoris en tuiles ; Spaces avec leurs onglets épinglés, dossiers, icône et couleur ; Today, vos
+- Tuiles ; Spaces avec leurs onglets épinglés, dossiers, icône et couleur ; Today, vos
   autres onglets, avec les groupes d'onglets de Chrome.
 - Des onglets épinglés qui gardent leur adresse, et l'archivage automatique des onglets que vous ne
   regardez plus.
@@ -56,9 +56,9 @@ vous rangez reste dans les favoris et les onglets épinglés de Chrome.
 Site : [poparchi.github.io/arbalete/fr](https://poparchi.github.io/arbalete/fr/).
 
 
-- **L'extension** vient du Chrome Web Store ; sa page sera indiquée ici une fois publiée. La barre
+- **L'extension** vient du [Chrome Web Store](https://chromewebstore.google.com/detail/jnhllkobhicebmnkamcajgblljiigeed). La barre
   est dans le panneau latéral de Chrome, sur tout ordinateur : cliquez sur l'icône d'Arbalète dans
-  la barre d'outils, puis Ouvrir la sidebar.
+  la barre d'outils, puis Ouvrir la barre latérale.
 - **Arbalète pour Mac**, une app compagnon facultative et gratuite pour macOS uniquement : elle
   affiche la barre au bord gauche de la fenêtre de Chrome, en dehors de toute page.
   [L'installer](https://poparchi.github.io/arbalete/fr/mac/) : elle n'est pas notarisée par Apple, ce
