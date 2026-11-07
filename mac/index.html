@@ -42,20 +42,23 @@
       </script>
 
       <header><img src="../icon-128.png" alt="" /><h1>Install Arbalète for Mac</h1></header>
-      <p class="lead">The free companion app of the Arbalète extension, published by PopArchi, an independent developer in France: it shows the sidebar at the left edge of Chrome's window, outside any page, with the command bar in the middle of the window and the Ctrl+Tab tab switcher. For macOS 13 or later, on Apple silicon or Intel, with the <a href="https://chromewebstore.google.com/detail/jnhllkobhicebmnkamcajgblljiigeed">Arbalète extension</a> in Google Chrome.</p>
-
-      <div class="note">
-        <p><strong>Why does macOS ask you first?</strong> Apple checks (“notarizes”) only the apps of developers in its paid program; Arbalète for Mac is not in it. So the first time you open each version, macOS blocks it with a warning until you allow it yourself, in its settings. In all, a few minutes: Chrome may warn about the download, macOS warns twice and asks for your password, and Chrome asks once to let Arbalète talk to the app. Each is said below, in its words.</p>
-        <p>The app is signed by its publisher, PopArchi, with its own certificate (not one of Apple's), the same for every version: what you allow it stays from one version to the next.</p>
-        <p><strong>What Arbalète never asks you</strong>: to turn off Gatekeeper, to change “Allow applications downloaded from”, or to paste a command in Terminal to install it. If a page or a message tells you to, it does not come from Arbalète. Download it from this page only.</p>
-        <p>You can also do without it: without the app, the sidebar already works in Chrome's side panel.</p>
-      </div>
+      <p class="lead">The free app that puts Arbalète's sidebar at the left edge of Chrome's window, outside any page, with the command bar in the middle. For macOS 13 or later, with the <a href="https://chromewebstore.google.com/detail/jnhllkobhicebmnkamcajgblljiigeed">Arbalète extension</a> in Google Chrome. Published by PopArchi, an independent developer in France.</p>
 
       <div class="actions">
         <a class="cta" href="https://github.com/poparchi/arbalete/releases/latest/download/Arbalete.dmg">Download Arbalète for Mac</a>
-        <a href="https://github.com/poparchi/arbalete/releases/latest">Notes of the latest version</a>
+        <a href="https://github.com/poparchi/arbalete/releases/latest">Latest release notes</a>
       </div>
       <p class="small">The file is called Arbalete.dmg and comes from the project's releases page, on GitHub. If Chrome warns that it is rarely downloaded, as any new app is, you can keep it from Chrome's downloads list.</p>
+
+      <div class="note">
+        <p><strong>macOS will take you through two alerts and its System Settings, then ask for your password: that is expected</strong>, as Apple has not checked this app. Each screen is shown below, in its words; allow a few minutes.</p>
+        <p><strong>Arbalète will never ask you</strong> to turn off a protection of macOS (Gatekeeper), to change “Allow applications downloaded from”, or to paste a command in Terminal. If a page or a message tells you to, it does not come from Arbalète: download it from this page only.</p>
+        <details>
+          <summary>Why has Apple not checked it?</summary>
+          <p>Apple checks (“notarizes”) only the apps of developers in its paid program; Arbalète for Mac is not in it. So the first time you open each version, macOS blocks it until you allow it yourself, in its settings. The app is signed by its publisher, PopArchi, with its own certificate (not one of Apple's), the same for every version: what you allow it stays from one version to the next.</p>
+        </details>
+        <p>You can also do without it: without the app, the sidebar already works in Chrome's side panel.</p>
+      </div>
 
       <p>Your version of macOS: Apple menu › <strong>About This Mac</strong>. Then follow its part.</p>
 
@@ -67,7 +70,7 @@
           <p>Click <span class="button">Done</span>. macOS writes Arbalete without its accent, after the file's name: it is Arbalète.</p>
         </li>
         <li>
-          <p>Open <strong>System Settings › Privacy &amp; Security</strong> and scroll down to <strong>Security</strong>:</p>
+          <p>Open <strong>System Settings › Privacy &amp; Security</strong> (Apple menu › System Settings…) and scroll down to <strong>Security</strong>:</p>
           <blockquote>“Arbalete” was blocked to protect your Mac.</blockquote>
           <p>Click <span class="button">Open Anyway</span>. The button stays there for about an hour after you tried to open the app; past that, open it again from the disk image.</p>
         </li>
@@ -75,7 +78,8 @@
           <p>macOS warns you once more: click <span class="button">Open Anyway</span>, then confirm with your password or Touch ID. macOS asks for it: Arbalète never sees it.</p>
         </li>
         <li>
-          <p>Arbalète asks <strong>“Install Arbalète for Mac?”</strong>: click <span class="button">Install</span>. It moves itself to your Applications folder, in place of a previous version if there is one, and tells Chrome it may start it for the Arbalète extension; nothing else on your Mac changes. Back in Chrome, Arbalète Settings (the page it opens at install) checks its step: by itself if you had clicked <span class="button">Download</span> there, otherwise once you click <span class="button">Check Again</span> there. At either click, Chrome asks once to let Arbalète “Communicate with cooperating native applications”: allow it, it is this app and nothing else.</p>
+          <p>Arbalète asks <strong>“Install Arbalète for Mac?”</strong>: click <span class="button">Install</span>. It moves itself to your Applications folder and tells Chrome it may start it; nothing else on your Mac changes.</p>
+          <p>Back in Chrome, Arbalète Settings check the app's step by themselves. If you did not come through their <span class="button">Get the App</span> button, click <span class="button">I Have the App</span> there and allow Chrome's request, “Communicate with cooperating native applications”: it is this app.</p>
           <p>Then eject the disk image; Arbalete.dmg can go to the Trash. You will not have to open the app: Chrome starts it.</p>
         </li>
       </ol>
